@@ -1,0 +1,10 @@
+Pods
+.xcworkspace
+.DS_Store
+*.xcworkspacedata
+xcuserdata
+/Pods/Manifest.lock
+build/
+.idea
+*.xcuserstate
+UserInterfaceState.xcuserstate
