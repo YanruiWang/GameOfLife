@@ -16,4 +16,6 @@
 
 - (BOOL)isNeighborOfAnotherPosition:(GOLCellPosition *)position;
 
++ (int)indexWithRow:(int)row column:(int)column maxRowIndex:(int)maxRowIndex maxColumnIndex:(int)maxColumnIndex;
+
 @end

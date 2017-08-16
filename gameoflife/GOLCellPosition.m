@@ -15,4 +15,15 @@
     return position.row >= self.row  - 1 && position.row <= self.row + 1 && position.column >= self.column - 1 && position.column <= self.column + 1;
 }
 
+- (int)convertToIndexWithMaxColumn:(int)maxColumn {
+    return self.row * maxColumn + self.column;
+}
+
++ (int)indexWithRow:(int)row column:(int)column maxRowIndex:(int)maxRowIndex maxColumnIndex:(int)maxColumnIndex {
+    if (row < 0 || column < 0 || row > maxRowIndex || column > maxColumnIndex) {
+        return -1;
+    }
+    return row * (maxColumnIndex + 1) + column;
+}
+
 @end

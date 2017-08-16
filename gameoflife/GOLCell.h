@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, GOLCellStatus) {
 
 - (void)determineNextStatusByLiveNumber:(int)live deadNumber:(int)dead;
 
-- (NSArray <GOLCell *>*)neighorCells:(NSArray *)allCells;
+- (NSArray <GOLCell *>*)neighorCells:(NSArray *)allCells maxRow:(int)maxRow maxColumn:(int)maxColumn;
 
 - (void)determineNextStatusByNeighbors:(NSArray <GOLCell *>*)cells;
 
