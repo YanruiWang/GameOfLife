@@ -22,6 +22,8 @@
 
 @property (nonatomic, strong) UIButton *start;
 
+@property (nonatomic, assign) BOOL gameRunning;
+
 @end
 
 @implementation ViewController
@@ -64,10 +66,13 @@
         cell.position.column = i - (i / 20) * 20;
         [self.cells addObject:cell];
     }
+    self.gameRunning = NO;
     self.start = [[UIButton alloc] init];
     [self.start setTitle:@"start" forState:UIControlStateNormal];
     [self.start addTarget:self action:@selector(startGame) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.start];
+    
+    
 //
 }
 
@@ -85,8 +90,16 @@
 }
 
 - (void)startGame {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(nextGeneration) userInfo:nil repeats:YES];
+    if (self.gameRunning) {
+        [self.timer invalidate];
+        [self.start setTitle:@"start" forState:UIControlStateNormal];
+    } else {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(nextGeneration) userInfo:nil repeats:YES];
+        [self.start setTitle:@"stop" forState:UIControlStateNormal];
+    }
+    self.gameRunning = !self.gameRunning;
 }
+
 
 - (void)nextGeneration {
     for (GOLCell *cell in self.cells) {
@@ -113,7 +126,8 @@
     } else {
         cell.backgroundColor = [UIColor whiteColor];
     }
-
+    cell.layer.borderWidth = 1;
+    cell.layer.borderColor = [[UIColor grayColor] CGColor];
     return cell;
 }
 
