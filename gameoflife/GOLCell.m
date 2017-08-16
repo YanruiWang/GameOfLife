@@ -10,7 +10,7 @@
 
 @implementation GOLCell
 
-+ (NSArray <GOLCell *>*)generateRamdomCells:(NSArray <GOLCell *>*)cells {
++ (NSArray <GOLCell *>*)generateRandomCells:(NSArray <GOLCell *>*)cells {
     for (GOLCell *cell in cells) {
         NSNumber *number = @(arc4random_uniform(30));
         int cellStatus = number.intValue;
@@ -50,7 +50,7 @@
     [self determineNextStatusByLiveNumber:live deadNumber:dead];
 }
 
-- (NSArray <GOLCell *>*)neighorCells:(NSArray *)allCells maxRow:(int)maxRow maxColumn:(int)maxColumn {
+- (NSArray <GOLCell *>*)neighborCells:(NSArray *)allCells maxRow:(int)maxRow maxColumn:(int)maxColumn {
     NSMutableArray <GOLCell *>*cells = [NSMutableArray array];
     for (NSNumber *index in [self neighorCellIndiesWithMaxRowIndex:maxRow - 1 maxColumnIndex:maxColumn - 1]) {
         if (index.intValue >= 0) [cells addObject:allCells[index.intValue]]; // 超出范围的 index.intValue = -1

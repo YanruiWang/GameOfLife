@@ -22,12 +22,15 @@
 
 @property (nonatomic, assign) BOOL gameRunning;
 
+@property (nonatomic ,assign) int rowCount;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _rowCount = 20;
     [self initUI];
 }
 
@@ -40,10 +43,10 @@
     [self.view addSubview:self.collectionView];
     [self.collectionView registerClass:[GOLCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     self.cells = [NSMutableArray array];
-    for (int i = 0; i < 400; i++) {
+    for (int i = 0; i < _rowCount * _rowCount; i++) {
         GOLCell *cell = [[GOLCell alloc] init];
-        cell.position.row = i / 20;
-        cell.position.column = i - (i / 20) * 20;
+        cell.position.row = i / _rowCount;
+        cell.position.column = i - (i / _rowCount) * _rowCount;
         [self.cells addObject:cell];
     }
     self.gameRunning = NO;
@@ -93,23 +96,23 @@
 
 - (void)nextGeneration {
     for (GOLCell *cell in self.cells) {
-        NSArray *neighors = [cell neighorCells:self.cells maxRow:20 maxColumn:20];
-        [cell determineNextStatusByNeighbors:neighors];
+        NSArray *neighbors = [cell neighborCells:self.cells maxRow:_rowCount maxColumn:_rowCount];
+        [cell determineNextStatusByNeighbors:neighbors];
     }
     [self.collectionView reloadData];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return _rowCount;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 400;
+    return _rowCount;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GOLCollectionViewCell *cell = (GOLCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    GOLCell *cellModel = self.cells[indexPath.item];
+    GOLCell *cellModel = self.cells[indexPath.section * _rowCount + indexPath.item];
     cellModel.status = cellModel.nextStatus;
     if (cellModel.status == GOLCellStatusLive) {
         cell.backgroundColor = [UIColor blackColor];
@@ -122,7 +125,7 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake((int)collectionView.frame.size.width / 20, (int)collectionView.frame.size.width / 20);
+    return CGSizeMake((int)collectionView.frame.size.width / _rowCount, (int)collectionView.frame.size.width / _rowCount);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
@@ -134,7 +137,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    GOLCell *cellModel = self.cells[indexPath.item];
+    GOLCell *cellModel = self.cells[indexPath.section * _rowCount + indexPath.item];
     if (cellModel.status == GOLCellStatusDead) {
         cellModel.status = GOLCellStatusLive;
         GOLCollectionViewCell *cell = (GOLCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
