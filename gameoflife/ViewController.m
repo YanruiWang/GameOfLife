@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ProductExceptSelf.h"
 #import "GOLCollectionViewCell.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
@@ -22,7 +21,7 @@
 
 @property (nonatomic, assign) BOOL gameRunning;
 
-@property (nonatomic ,assign) int rowCount;
+@property (nonatomic, assign) int rowCount;
 
 @end
 
@@ -69,15 +68,15 @@
 - (void)initLayout {
     self.collectionView.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[[self.collectionView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
-                                              [self.collectionView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
-                                              [self.collectionView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:20],
-                                              [self.collectionView.heightAnchor constraintEqualToAnchor:self.collectionView.widthAnchor]]];
+            [self.collectionView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
+            [self.collectionView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:20],
+            [self.collectionView.heightAnchor constraintEqualToAnchor:self.collectionView.widthAnchor]]];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    
+
     self.start.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[[self.start.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
-                                              [self.start.topAnchor constraintEqualToAnchor:self.collectionView.bottomAnchor constant:40]]];
+            [self.start.topAnchor constraintEqualToAnchor:self.collectionView.bottomAnchor constant:40]]];
     [self.start setTintColor:[UIColor blueColor]];
     [self.start setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
 }
