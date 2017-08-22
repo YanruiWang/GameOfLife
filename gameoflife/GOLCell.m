@@ -10,7 +10,7 @@
 
 @implementation GOLCell
 
-+ (NSArray <GOLCell *>*)generateRandomCells:(NSArray <GOLCell *>*)cells {
++ (void)generateRandomCells:(NSArray <GOLCell *>*)cells {
     for (GOLCell *cell in cells) {
         NSNumber *number = @(arc4random_uniform(30));
         int cellStatus = number.intValue;
@@ -20,7 +20,6 @@
             cell.status = GOLCellStatusDead;
         }
     }
-    return cells;
 }
 
 - (void)determineNextStatusByLiveNumber:(int)live deadNumber:(int)dead {

@@ -22,6 +22,8 @@ typedef NS_ENUM(NSUInteger, GOLCellStatus) {
 
 @property (nonatomic, strong) GOLCellPosition *position;
 
++ (void)generateRandomCells:(NSArray <GOLCell *> *)cells;
+
 - (void)determineNextStatusByLiveNumber:(int)live deadNumber:(int)dead;
 
 - (NSArray <GOLCell *>*)neighborCells:(NSArray *)allCells maxRow:(int)maxRow maxColumn:(int)maxColumn;
