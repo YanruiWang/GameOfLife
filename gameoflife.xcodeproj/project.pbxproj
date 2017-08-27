@@ -9,17 +9,15 @@
 /* Begin PBXBuildFile section */
 		7E1425CE1F41AC580022773A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425CD1F41AC580022773A /* main.m */; };
 		7E1425D11F41AC580022773A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425D01F41AC580022773A /* AppDelegate.m */; };
-		7E1425D41F41AC580022773A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425D31F41AC580022773A /* ViewController.m */; };
 		7E1425D71F41AC580022773A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1425D51F41AC580022773A /* Main.storyboard */; };
 		7E1425D91F41AC580022773A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E1425D81F41AC580022773A /* Assets.xcassets */; };
 		7E1425DC1F41AC580022773A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1425DA1F41AC580022773A /* LaunchScreen.storyboard */; };
 		7E1425E71F41AC580022773A /* gameoflifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425E61F41AC580022773A /* gameoflifeTests.m */; };
 		7E1425F21F41AC580022773A /* gameoflifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425F11F41AC580022773A /* gameoflifeUITests.m */; };
-		7E1426011F41AD0F0022773A /* ProductExceptSelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1426001F41AD0F0022773A /* ProductExceptSelf.m */; };
-		7E1426041F41CCBB0022773A /* GOLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1426031F41CCBB0022773A /* GOLCell.m */; };
-		7E1426071F41CE3D0022773A /* GOLBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1426061F41CE3D0022773A /* GOLBoard.m */; };
-		7E14260B1F41CF0F0022773A /* GOLCellPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E14260A1F41CF0F0022773A /* GOLCellPosition.m */; };
-		7E14260E1F41E23F0022773A /* GOLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E14260D1F41E23F0022773A /* GOLCollectionViewCell.m */; };
+		7E6A50EA1F52BFAD0016FC10 /* GOLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A50E71F52BFAD0016FC10 /* GOLCell.m */; };
+		7E6A50EB1F52BFAD0016FC10 /* GOLCellPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A50E91F52BFAD0016FC10 /* GOLCellPosition.m */; };
+		7E6A50F01F52BFC00016FC10 /* GOLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A50ED1F52BFC00016FC10 /* GOLCollectionViewCell.m */; };
+		7E6A50F11F52BFC00016FC10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A50EF1F52BFC00016FC10 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +42,6 @@
 		7E1425CD1F41AC580022773A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E1425CF1F41AC580022773A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E1425D01F41AC580022773A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7E1425D21F41AC580022773A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7E1425D31F41AC580022773A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7E1425D61F41AC580022773A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E1425D81F41AC580022773A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E1425DB1F41AC580022773A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,16 +52,14 @@
 		7E1425ED1F41AC580022773A /* gameoflifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameoflifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1425F11F41AC580022773A /* gameoflifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gameoflifeUITests.m; sourceTree = "<group>"; };
 		7E1425F31F41AC580022773A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E1425FF1F41AD0F0022773A /* ProductExceptSelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductExceptSelf.h; sourceTree = "<group>"; };
-		7E1426001F41AD0F0022773A /* ProductExceptSelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductExceptSelf.m; sourceTree = "<group>"; };
-		7E1426021F41CCBB0022773A /* GOLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLCell.h; sourceTree = "<group>"; };
-		7E1426031F41CCBB0022773A /* GOLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLCell.m; sourceTree = "<group>"; };
-		7E1426051F41CE3D0022773A /* GOLBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLBoard.h; sourceTree = "<group>"; };
-		7E1426061F41CE3D0022773A /* GOLBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLBoard.m; sourceTree = "<group>"; };
-		7E1426091F41CF0F0022773A /* GOLCellPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLCellPosition.h; sourceTree = "<group>"; };
-		7E14260A1F41CF0F0022773A /* GOLCellPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLCellPosition.m; sourceTree = "<group>"; };
-		7E14260C1F41E23F0022773A /* GOLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLCollectionViewCell.h; sourceTree = "<group>"; };
-		7E14260D1F41E23F0022773A /* GOLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLCollectionViewCell.m; sourceTree = "<group>"; };
+		7E6A50E61F52BFAD0016FC10 /* GOLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCell.h; path = Entity/GOLCell.h; sourceTree = "<group>"; };
+		7E6A50E71F52BFAD0016FC10 /* GOLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLCell.m; path = Entity/GOLCell.m; sourceTree = "<group>"; };
+		7E6A50E81F52BFAD0016FC10 /* GOLCellPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCellPosition.h; path = Entity/GOLCellPosition.h; sourceTree = "<group>"; };
+		7E6A50E91F52BFAD0016FC10 /* GOLCellPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLCellPosition.m; path = Entity/GOLCellPosition.m; sourceTree = "<group>"; };
+		7E6A50EC1F52BFC00016FC10 /* GOLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCollectionViewCell.h; path = View/GOLCollectionViewCell.h; sourceTree = "<group>"; };
+		7E6A50ED1F52BFC00016FC10 /* GOLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLCollectionViewCell.m; path = View/GOLCollectionViewCell.m; sourceTree = "<group>"; };
+		7E6A50EE1F52BFC00016FC10 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = View/ViewController.h; sourceTree = "<group>"; };
+		7E6A50EF1F52BFC00016FC10 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = View/ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +87,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E104B311F52BEE7002C1FFB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7E6A50E61F52BFAD0016FC10 /* GOLCell.h */,
+				7E6A50E71F52BFAD0016FC10 /* GOLCell.m */,
+				7E6A50E81F52BFAD0016FC10 /* GOLCellPosition.h */,
+				7E6A50E91F52BFAD0016FC10 /* GOLCellPosition.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		7E104B321F52BEFB002C1FFB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		7E104B331F52BF06002C1FFB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		7E104B341F52BF11002C1FFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E6A50EC1F52BFC00016FC10 /* GOLCollectionViewCell.h */,
+				7E6A50ED1F52BFC00016FC10 /* GOLCollectionViewCell.m */,
+				7E6A50EE1F52BFC00016FC10 /* ViewController.h */,
+				7E6A50EF1F52BFC00016FC10 /* ViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		7E1425C01F41AC580022773A = {
 			isa = PBXGroup;
 			children = (
@@ -116,25 +146,17 @@
 		7E1425CB1F41AC580022773A /* gameoflife */ = {
 			isa = PBXGroup;
 			children = (
+				7E104B341F52BF11002C1FFB /* View */,
+				7E104B331F52BF06002C1FFB /* Presenter */,
+				7E104B321F52BEFB002C1FFB /* Interactor */,
+				7E104B311F52BEE7002C1FFB /* Entity */,
 				7E1425CF1F41AC580022773A /* AppDelegate.h */,
 				7E1425D01F41AC580022773A /* AppDelegate.m */,
-				7E1425D21F41AC580022773A /* ViewController.h */,
-				7E1425D31F41AC580022773A /* ViewController.m */,
 				7E1425D51F41AC580022773A /* Main.storyboard */,
 				7E1425D81F41AC580022773A /* Assets.xcassets */,
 				7E1425DA1F41AC580022773A /* LaunchScreen.storyboard */,
 				7E1425DD1F41AC580022773A /* Info.plist */,
 				7E1425CC1F41AC580022773A /* Supporting Files */,
-				7E1425FF1F41AD0F0022773A /* ProductExceptSelf.h */,
-				7E1426001F41AD0F0022773A /* ProductExceptSelf.m */,
-				7E1426021F41CCBB0022773A /* GOLCell.h */,
-				7E1426031F41CCBB0022773A /* GOLCell.m */,
-				7E1426051F41CE3D0022773A /* GOLBoard.h */,
-				7E1426061F41CE3D0022773A /* GOLBoard.m */,
-				7E1426091F41CF0F0022773A /* GOLCellPosition.h */,
-				7E14260A1F41CF0F0022773A /* GOLCellPosition.m */,
-				7E14260C1F41E23F0022773A /* GOLCollectionViewCell.h */,
-				7E14260D1F41E23F0022773A /* GOLCollectionViewCell.m */,
 			);
 			path = gameoflife;
 			sourceTree = "<group>";
@@ -299,14 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E1425D41F41AC580022773A /* ViewController.m in Sources */,
+				7E6A50F11F52BFC00016FC10 /* ViewController.m in Sources */,
 				7E1425D11F41AC580022773A /* AppDelegate.m in Sources */,
-				7E1426041F41CCBB0022773A /* GOLCell.m in Sources */,
-				7E14260E1F41E23F0022773A /* GOLCollectionViewCell.m in Sources */,
-				7E14260B1F41CF0F0022773A /* GOLCellPosition.m in Sources */,
-				7E1426011F41AD0F0022773A /* ProductExceptSelf.m in Sources */,
+				7E6A50F01F52BFC00016FC10 /* GOLCollectionViewCell.m in Sources */,
 				7E1425CE1F41AC580022773A /* main.m in Sources */,
-				7E1426071F41CE3D0022773A /* GOLBoard.m in Sources */,
+				7E6A50EA1F52BFAD0016FC10 /* GOLCell.m in Sources */,
+				7E6A50EB1F52BFAD0016FC10 /* GOLCellPosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
