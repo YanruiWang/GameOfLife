@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B79C37C488D031D2D8EC0AB /* GOLCellPositionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B79C85283BF4B0B6C8032EC /* GOLCellPositionInteractor.m */; };
 		7E1425CE1F41AC580022773A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425CD1F41AC580022773A /* main.m */; };
 		7E1425D11F41AC580022773A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425D01F41AC580022773A /* AppDelegate.m */; };
 		7E1425D71F41AC580022773A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1425D51F41AC580022773A /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		7E1425DC1F41AC580022773A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1425DA1F41AC580022773A /* LaunchScreen.storyboard */; };
 		7E1425E71F41AC580022773A /* gameoflifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425E61F41AC580022773A /* gameoflifeTests.m */; };
 		7E1425F21F41AC580022773A /* gameoflifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1425F11F41AC580022773A /* gameoflifeUITests.m */; };
+		7E1C0F031F52D073008DA46C /* GOLCellInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C0F021F52D073008DA46C /* GOLCellInteractor.m */; };
 		7E6A50EA1F52BFAD0016FC10 /* GOLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A50E71F52BFAD0016FC10 /* GOLCell.m */; };
 		7E6A50EB1F52BFAD0016FC10 /* GOLCellPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A50E91F52BFAD0016FC10 /* GOLCellPosition.m */; };
 		7E6A50F01F52BFC00016FC10 /* GOLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A50ED1F52BFC00016FC10 /* GOLCollectionViewCell.m */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B79C773DD598E2430E5C4AD /* GOLCellPositionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCellPositionInteractor.h; path = Interactor/GOLCellPositionInteractor.h; sourceTree = "<group>"; };
+		7B79C85283BF4B0B6C8032EC /* GOLCellPositionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLCellPositionInteractor.m; path = Interactor/GOLCellPositionInteractor.m; sourceTree = "<group>"; };
+		7B79CFC19B536641C8C08D5D /* GOLCellPositionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCellPositionProvider.h; path = Interactor/GOLCellPositionProvider.h; sourceTree = "<group>"; };
 		7E1425C91F41AC580022773A /* gameoflife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gameoflife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1425CD1F41AC580022773A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E1425CF1F41AC580022773A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +57,9 @@
 		7E1425ED1F41AC580022773A /* gameoflifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameoflifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1425F11F41AC580022773A /* gameoflifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gameoflifeUITests.m; sourceTree = "<group>"; };
 		7E1425F31F41AC580022773A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E1C0F011F52D073008DA46C /* GOLCellInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCellInteractor.h; path = Interactor/GOLCellInteractor.h; sourceTree = "<group>"; };
+		7E1C0F021F52D073008DA46C /* GOLCellInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLCellInteractor.m; path = Interactor/GOLCellInteractor.m; sourceTree = "<group>"; };
+		7E5CD1EA1F52CFA700CA0CAE /* GOLCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCellProvider.h; path = Interactor/GOLCellProvider.h; sourceTree = "<group>"; };
 		7E6A50E61F52BFAD0016FC10 /* GOLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCell.h; path = Entity/GOLCell.h; sourceTree = "<group>"; };
 		7E6A50E71F52BFAD0016FC10 /* GOLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLCell.m; path = Entity/GOLCell.m; sourceTree = "<group>"; };
 		7E6A50E81F52BFAD0016FC10 /* GOLCellPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCellPosition.h; path = Entity/GOLCellPosition.h; sourceTree = "<group>"; };
@@ -101,6 +109,12 @@
 		7E104B321F52BEFB002C1FFB /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				7E5CD1EA1F52CFA700CA0CAE /* GOLCellProvider.h */,
+				7E1C0F011F52D073008DA46C /* GOLCellInteractor.h */,
+				7E1C0F021F52D073008DA46C /* GOLCellInteractor.m */,
+				7B79CFC19B536641C8C08D5D /* GOLCellPositionProvider.h */,
+				7B79C85283BF4B0B6C8032EC /* GOLCellPositionInteractor.m */,
+				7B79C773DD598E2430E5C4AD /* GOLCellPositionInteractor.h */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -323,10 +337,12 @@
 			files = (
 				7E6A50F11F52BFC00016FC10 /* ViewController.m in Sources */,
 				7E1425D11F41AC580022773A /* AppDelegate.m in Sources */,
+				7E1C0F031F52D073008DA46C /* GOLCellInteractor.m in Sources */,
 				7E6A50F01F52BFC00016FC10 /* GOLCollectionViewCell.m in Sources */,
 				7E1425CE1F41AC580022773A /* main.m in Sources */,
 				7E6A50EA1F52BFAD0016FC10 /* GOLCell.m in Sources */,
 				7E6A50EB1F52BFAD0016FC10 /* GOLCellPosition.m in Sources */,
+				7B79C37C488D031D2D8EC0AB /* GOLCellPositionInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

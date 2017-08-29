@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GOLCollectionViewCell.h"
+#import "GOLCellInteractor.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
@@ -25,13 +26,14 @@
 
 @property (nonatomic, assign) int rowCount;
 
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _rowCount = 20;
+    _rowCount = 40;
     [self initUI];
 }
 
@@ -103,7 +105,10 @@
         NSArray *neighbors = [cell neighborCells:self.cells maxRow:_rowCount maxColumn:_rowCount];
         [cell determineNextStatusByNeighbors:neighbors];
     }
-    [_collectionView reloadData];
+//    [_collectionView performBatchUpdates:^{
+        [_collectionView reloadData];
+//    } completion:nil];
+    
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
